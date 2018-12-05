@@ -3,7 +3,7 @@ layout: post
 title:  "[스타트업]사업계획서 작성 방법"
 subtitle:   "사업계획서 작성 방법"
 categories: essay
-tags: essay startup
+tags: essay
 ---
 
 1년간 스타트업을 준비하며 공부한 것들이 꽤 많아졌다. 그 중에 사업계획서를 작성하는 법에 대해 공유해보려한다. 현재는 이미 자리를 잡은 스타트업의 대표님들과 엔젤투자자, VC등을 만나며 직접 메모하고 정리한 내용이다.
