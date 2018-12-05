@@ -2,8 +2,8 @@
 layout: post
 title: "그냥 끄적여보자!"
 subtitle: "다시 끄적여 보자!"
-categories: Writing
-tags: Writing
+categories: writing
+tags: writing
 ---
 
 ## 그냥 끄적임
