@@ -1,5 +1,5 @@
 ---
-layout: tag-blog
+layout: list
 title: Writing
 slug: writing
 category: writing
