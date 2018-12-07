@@ -18,8 +18,7 @@ tagline:             시골쥐의 IT 이야기
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  게으르기 때문에 게발자.
-  글쓰는 걸 좋아하고, 디자인과 개발을 좋아한다.
+  생각하는대로 살자
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
