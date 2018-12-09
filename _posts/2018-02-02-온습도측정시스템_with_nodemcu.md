@@ -4,23 +4,23 @@ title: 온습도측정시스템 구축하기 with nodemcu v2
 categories: work
 tags: work
 ---
-# 1. 준비하기
+## 1. 준비하기
 
-## 1) 배경
+### 1) 배경
 
-## 2) IoT 기기 선정
+### 2) IoT 기기 선정
 
-## 3) Firmware 설치
+### 3) Firmware 설치
 
-## 4) ESplorer 설치
+### 4) ESplorer 설치
 
-## 5) 코드 작성
+### 5) 코드 작성
 
-## 6) Thingspeak 연동하기
+### 6) Thingspeak 연동하기
 
 - pushbullet
 
-## 7) 관련 사이트
+### 7) 관련 사이트
 
 - http://www.arduined.eu/ : CH340G 드라이버 모듈
 - https://github.com/nodemcu/nodemcu-firmware/releases : nodemcu firmware 사이트
@@ -33,9 +33,9 @@ tags: work
 - http://networkstarts.tistory.com/32: pushbullet으로 알람 보내기
 - https://thingspeak.com/prices/thingspeak_home: thingspeak유료 계정 설명
 
-# 2. 구축 일지
+## 2. 구축 일지
 
-## 2018.02.02
+### 2018.02.02
 
 ### nodemcu v2의 wifi.suspend(), node.sleep() 기능 사용하기
 
@@ -52,7 +52,7 @@ nodemcu v2 + DHT22 + AA건전지4개 조합으로 테스트를 진행했고 잘 
 ### 고정IP 사용하여 전력량을 줄이기
 
 현재 wifi를 hybird egg를 사용하고 있는데 접속하면 DHCP 자동으로 IP를 할당받게 된다. 수동으로 IP를 설정할 수 있도록 한다.
-## 2018.02.03
+### 2018.02.03
 
 ### MQTT 이용하여 thingspeak 전송하기
 
@@ -63,19 +63,19 @@ nodemcu v2 + DHT22 + AA건전지4개 조합으로 테스트를 진행했고 잘 
 MQTT API Key를 이용하는 줄 알았는데 그대로 writekey를 이용하여 데이터를 업데이트 한다.
 업로드는 정상적으로 하는 것을 확인.. 현재 온습도가 측정안되는 부분은 모듈이상으로 판단됨.
 
-## 2018.02.05
+### 2018.02.05
 
 ### MQTT 전송 최적화
 
 MQTT가 안되었던 것이 아니고 기존 데이터가 많아서 메모리가 부족했던 것으로 보인다. dht값을 100단위로 받아서 /,%로 소숫점을 표현했던 함수들이 메모리를 많이 잡은 것으로 판단됨. 기존처럼 dht.read(5)로 실행하니 정상동작함. 하지만 소숫점 표현이 불가함. firmware를 int -> float로 변경 후 정상 표현 됨 확인. 이제 배터리가 1달 이상 유지 되는 것이 관건임. 
 
-## 2018.02.06
+### 2018.02.06
 
 ### LTE Egg 인터넷 끊기는 문제?
 
 약 12시간 정도 동작을 하다가 온습도 수집이 멈췄다. 기존처럼 건전지가 방전된 줄 알았는데 보조배터리 전력량 체크를 보니 아직 4칸 가득 차 있다. 예상되는 상황은 두가지 이다. 하나는 LTE Egg가 약 24시간에 한번정도 세션을 초기화 하는 경우, 또 하나는 보드가 동작 중에 비정상적으로 행이 걸리는 경우이다. 아니면 두가지 상황이 복합적으로 발생한 것일 수 도 있다.
 
-## 2018.02.07
+### 2018.02.07
 
 ### 매일 야간에 끊기는 원인 확인!!
 
@@ -159,7 +159,7 @@ tmr.alarm(1, 1000, 1, function()
         i = i + 1
 ```
 
-## 2018.02.09
+### 2018.02.09
 
 ### 배터리 자동꺼짐 기능에 의한 문제
 
@@ -184,14 +184,14 @@ nodemcu firmware 기본기능 중 위 기능이 off되어있어 이를 on 시키
 
 소스코드 수정 후 build하는 방법으로 docker를 활용할 수 있다. win10에 docker를 올리고 하려했으나 왜인지... 'docker is starting'이라고만 되어있고 진행이 되지 않는다. 임시방편으로 USB우분투에 docker를 설치하여 위 소스를 빌드하였다. 최신 빌드된 firmware를 기기에 적용하고 실행하니 suspend()기능이 사용 가능해졌다.
 
-## 2018.02.12
+### 2018.02.12
 
 ### 배터리 교체의 필요성
 
 위 LIGHT SLEEP은 사용은 가능해졌지만 주문한 배터리에 더 큰 문제가 있었다. SLEEP 여부와 상관없이 WIFI 전송을 하지 않으면 전류가 너무 약해서 배터리 충전을 멈춰버린다. 한번 배터리가 깨어나면 약 25~30초정도 유지를 하는데, 즉 그 시간안에 측정데이터를 WIFI를 이용해 전송을 해야 꺼지지 않는다. 배터리를 다시주문했다.. ㅜㅜ
 
 
-## 2018.02.13
+### 2018.02.13
 
 ### Push 알람 구축 알아보기
 
@@ -200,7 +200,7 @@ nodemcu firmware 기본기능 중 위 기능이 off되어있어 이를 on 시키
 - http://networkstarts.tistory.com/32: pushbullet으로 알람 보내기
 2. thingspeak등의 사이트와 IFTTT를 연동해서 알람을 발생시키는 방법
 
-## 2018.02.14
+### 2018.02.14
 
 ### thingspeak 일일 허용량 초과
 
@@ -210,7 +210,7 @@ thingspeak으로 mqtt 메시지가 전달이 안되고 계속해서 Broker로 �
 
 유료 결제를 해야지만 그 이상 메시지가 발생 가능하다. 배터리 안정화 이후라고 하더라도 16개 단말이 3분 간격으로 메시지를 보내면 허용량을 초과하게 된다. 층 별로 계정을 나누어서 서비스를 제공해야 할 것 같다.
 
-## 2018.02.16
+### 2018.02.16
 
 ### ThingHTTP, REACT 기능을 사용한 Pushbullet 알람 발생
 
@@ -226,7 +226,7 @@ nodemcu에서 바로 알람을 발생시킬경우 추가적인 배터리 사용�
 
 Thingspeak의 ThingHTTP에서 Channel이름을 그대로 릴레이해서 사용하고 싶었으나 그러한 변수가 없어서 각각의 온습도 채널마다 ThingHTTP를 생성하고 이름을 다르게 출력하게 하였다.
 
-## 2018.02.18
+### 2018.02.18
 
 ### Thingspeak React 기능으로 베터리 이상 알람 추가
 
@@ -235,7 +235,7 @@ Thingspeak React중 **'No Data Check'** 라는 기능이 있다. 말 그대로 �
 ### -999도 예외처리
 온도 정보 수집에러 발생시 (-999도) 전송하지 않도록 예외처리. 값이 너무 커서 그래프보기가 어려워진다.
 
-## 2018.02.21
+### 2018.02.21
 
 ### 아이폰x에서 Pushbullet 알람 미수신 관련 문제
 
@@ -247,7 +247,7 @@ Thingspeak React중 **'No Data Check'** 라는 기능이 있다. 말 그대로 �
 
 Thingspeak(HTTP POST) --> FCM(Firebase Cloud Message) --> KakaoTalk
 
-## 2018.02.22
+### 2018.02.22
 
 ### 아이폰x에서 Pushbullet 알람 미수신 관련 문제(2) - Telegram
 
@@ -267,7 +267,7 @@ Body: chat_id=[Telegram Group Channel ID]&text=<b>4F_0332_AAA#4507 배터리 알
 
 그런데 개인적인 메시지를 수신할땐 해당 Bot과 채팅하는 ID를 입력하면 되는데 단체에서 사용하는 채널에서는 그게 안된다. 결국 **그룹생성**을 하여 거기에 텔레그램 Bot을 초대하고 해당 그룹채널 ID를 사용하는 방법으로 해결 했다.
 
-## 2018.03.02
+### 2018.03.02
 
 ### 데스크탑 그래프 출력하기
 
@@ -285,7 +285,7 @@ Body: chat_id=[Telegram Group Channel ID]&text=<b>4F_0332_AAA#4507 배터리 알
 - https://www.highcharts.com/demo : highchart 소스코드 예제
 - https://api.highcharts.com/highstock/labels.items : highchart 함수 사용 예제
 
-## 2018.03.05
+### 2018.03.05
 
 ### 온습도 AVG,MAX 값 매일 1회 문자메시지 or 이메일로 통보하기
 
