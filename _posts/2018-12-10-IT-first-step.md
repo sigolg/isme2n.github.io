@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[IT학개론] 1. IT란 무엇인가?"
-categories: it
-tags: it
+title: "[IT학개론] IT 공부의 시작"
+categories: IT
+tags: IT
 ---
 
 ### 들어가면서
@@ -10,7 +10,20 @@ tags: it
 Blockchain, AI, 머신러닝, 파이썬, R Programming, NODE.js, OPENSTACK, Github, REACT, Linux, 가상화...
 
 나열된 것 중 들어본 단어가 있나요?
-모두 크게는 IT와 관련된 용어입니다. IT 세상에 살고있다고 해도 과언이 아닌데요
+모두 IT와 관련된 용어입니다. IT 세상에 살고있다고 해도 과언이 아닌데요
+
+우리가 사용하는 스마트폰, 컴퓨터는 물론 TV셋탑박스, 냉장고, 에어콘, 자동차, 시계 등 대부분의 전자기기들은 모두 IT의 도움을 받고있습니다.
+아파트에서 매일타는 엘리베이터 조차도 누군가 동시에 버튼을 눌렀을 경우 어떻게 동작할 것인가에 대해 미리 **알고리즘**으로 구현을 해두었죠.
+
+#### IT의 사전적 의미
+
+우리에게 친숙한 IT라는 단어! IT는 무엇일까요?
+
+> Information Technology
+  The use of digital technology, like computers and the internet, to store and process data into useful information
+
+IT 란 Information Technology의 약자로 정보 기술을 의미합니다.
+컴퓨터, 인터넷 등 디지털 기술을 이용하여 정보들을 가공/처리하고 저장하는 모든 것을 뜻하죠
 
 그렇다면 우리가 이 모든것을 전부 알아야할까요?
 물론 지금까지는 아니었습니다. 
@@ -24,25 +37,7 @@ Blockchain, AI, 머신러닝, 파이썬, R Programming, NODE.js, OPENSTACK, Gith
 
 복잡 하다고 해서 멀리하기에는 이미 우리와 밀접한 관계가 되어 있습니다.
 
-### IT의 사전적 의미
-
-> Information Technology
-  The use of digital technology, like computers and the internet, to store and process data into useful information
-
-먼저 IT란 무엇일까요?
-IT 란 Information Technology의 약자로 정보 기술을 의미합니다.
-컴퓨터, 인터넷 등 디지털 기술을 이용하여 정보들을 가공/처리하고 저장하는 모든 것을 뜻하죠
-
-
-### 우리주변의 IT
-
-우리가 사용하는 스마트폰, 컴퓨터는 물론 TV셋탑박스, 냉장고, 에어콘, 자동차, 시계 등 대부분의 전자기기들은 모두 IT의 도움을 받고있습니다.
-아파트에서 매일타는 엘리베이터 조차도 누군가 동시에 버튼을 눌렀을 경우 어떻게 동작할 것인가에 대해 미리 **알고리즘**으로 구현을 해두었죠.
-
 ### IT를 왜 배워야 할까요?
-
-그렇다면 우리는 왜 IT를 배워야 할까요?
-앞으로의 글에서도 계속해서 언급하겠지만 우리의 일상에 IT가 없는 부분이 없기때문입니다.
 
 하지만 너무 어렵지요?
 어려운 이유는 무엇일까요?

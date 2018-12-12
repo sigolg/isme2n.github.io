@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
 title: IT
-slug: it
-category: it
+slug: IT
+category: IT
 menu: false
 order: 1
 ---

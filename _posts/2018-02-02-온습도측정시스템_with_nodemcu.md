@@ -2,7 +2,7 @@
 layout: post
 title: 온습도측정시스템 구축하기 with nodemcu v2
 categories: work
-tags: work
+tags: nodemcu
 ---
 ## 1. 준비하기
 
