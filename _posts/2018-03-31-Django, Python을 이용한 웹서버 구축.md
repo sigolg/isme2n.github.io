@@ -2,7 +2,7 @@
 layout: post
 title: Django, Python을 이용한 웹서버 구축
 categories: work
-tags: web
+tags: web서버
 ---
 ### 배경
 
