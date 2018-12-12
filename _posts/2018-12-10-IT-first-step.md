@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [IT학개론] IT 공부의 시작 (작성중)
+title: "[IT학개론] IT 공부의 시작 (작성중)"
 categories: IT
 tags: IT
 ---
