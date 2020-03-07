@@ -2,7 +2,7 @@
 layout: post
 title: "Windows 10에서 Sublime text 3 설치 및 Github 연동하기"
 categories: setup
-tags: test
+tags: setup
 ---
 
 ### 1. Sublime text3 설치
