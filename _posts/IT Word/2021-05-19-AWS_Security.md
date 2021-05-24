@@ -23,6 +23,7 @@ tags: word
 
 *  assume role, 특정 리소스 액세스 권한을 얻기위한 임시 자격증명을 요청한다.
 > aws sts assume-role  --role-arn arn:aws:iam::112434925628:role/AssumeRole_S3_jkcho --role-session-name  AssumeRole_S3_jkcho_1 --duration 900
+
 iam계정 112434925628의 role이라는 리소스 중 AssumeRole_S3_jkcho를 원한다.
 
 * 세션정책
